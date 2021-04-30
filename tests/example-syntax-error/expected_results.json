@@ -1,5 +1,5 @@
 {
   "version": 1,
   "status": "fail",
-  "output": "TODO: replace with correct output"
+  "output": "\u001b[01;31m\u001b[KError in /solution/impl.mips line 1 column 1: \"$globlLERIRN\" is not a recognized operator\u001b[m\u001b[K\n\nProcessing terminated due to errors."
 }

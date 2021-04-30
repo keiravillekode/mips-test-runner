@@ -1,5 +1,5 @@
 {
   "version": 1,
   "status": "fail",
-  "output": "TODO: replace with correct output"
+  "output": "\u001b[01;31m\u001b[KError in /solution/runner.mips line 37 column 17: Symbol \"is_leap_year\" not found in symbol table.\u001b[m\u001b[K\n\nProcessing terminated due to errors."
 }

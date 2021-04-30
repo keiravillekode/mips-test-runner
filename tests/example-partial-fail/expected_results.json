@@ -1,5 +1,5 @@
 {
   "version": 1,
   "status": "fail",
-  "output": "TODO: replace with correct output"
+  "output": "\u001b[01;31m\u001b[Kfailed for test input: 2400\u001b[m\u001b[K"
 }
