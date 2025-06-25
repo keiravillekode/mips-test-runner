@@ -8,7 +8,7 @@ RUN apt-get update && \
 
 WORKDIR /opt/test-runner
 
-RUN curl -lO https://courses.missouristate.edu/KenVollmar/mars/MARS_4_5_Aug2014/Mars4_5.jar
+RUN curl -LO https://github.com/dpetersanderson/MARS/releases/download/v.4.5.1/Mars4_5.jar
 
 COPY . .
 ENTRYPOINT ["/opt/test-runner/bin/run.sh"]
