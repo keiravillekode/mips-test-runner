@@ -20,7 +20,10 @@ for test_dir in tests/*; do
     results_file_path="${test_dir_path}/results.json"
     expected_results_file_path="${test_dir_path}/expected_results.json"
 
-    bin/run.sh "${test_dir_name}" "${test_dir_path}" "${test_dir_path}"
+    if ! bin/run.sh "${test_dir_name}" "${test_dir_path}" "${test_dir_path}" >/dev/null 2>&1; then
+        echo "bin/run.sh failed"
+        exit_code=1
+    fi
 
     # Normalize the results file
     sed -i -E \

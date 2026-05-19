@@ -48,7 +48,7 @@ else
 
     # Manually add colors to the output to help scanning the output for errors
     colorized_test_output=$(echo "${sanitized_test_output}" \
-         | GREP_COLOR='01;31' grep --color=always -E -e '^(failed for|Error in).*$|$')
+         | GREP_COLOR='mt=01;31' grep --color=always -E -e '^(failed for|Error in).*$|$')
 
     printf "${colorized_test_output}"
 
